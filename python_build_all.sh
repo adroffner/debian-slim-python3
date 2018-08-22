@@ -7,14 +7,11 @@
 
 # Install dependencies needed for python
 # =============================================================================
-## yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel
-## yum -y install mysql-devel readline-devel gdbm-devel
-# Use alternate: sqlite-devel
 
 apt-get install -y ca-certificates locales curl wget gcc g++ file make cmake \
     xz-utils mime-support libbz2-dev libc6-dev libdb-dev libexpat1-dev \
     libffi-dev  libncursesw5-dev libreadline-dev libssl-dev libsqlite3-dev \
-    libtinfo-dev zlib1g-dev libpcre++-dev libmysqlclient-dev \
+    libtinfo-dev zlib1g-dev libpcre++-dev default-libmysqlclient-dev \
     pkg-config vim less git rsync --no-install-recommends
 # Skip PostgreSQL client: libpq-dev
 
