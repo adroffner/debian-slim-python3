@@ -1,7 +1,7 @@
 # Debian Slim with Python 3.6 on Docker
 # =============================================================================
-# FROM dockercentral.it.att.com:5100/com.att.dev.argos/debian:jessie-slim
-FROM debian:jessie-slim
+# FROM dockercentral.it.att.com:5100/com.att.dev.argos/debian:stretch-slim
+FROM debian:stretch-slim
 
 # Set the Python 3.x.x version.
 # =============================================================================

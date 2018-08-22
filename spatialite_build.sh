@@ -6,7 +6,7 @@
 SPATIALITE_VERSION="4.3.0a"
 
 # spatialite: Install SQL/GIS libraries before building.
-apt-get install binutils libproj-dev gdal-bin
+apt-get install binutils libproj-dev gdal-bin libfreexl-dev
 
 # Download and build spatialite SQL/GIS *.so $SPATIALITE_VERSION
 # =============================================================================
