@@ -1,0 +1,14 @@
+# Debian Slim - Python 3.6 with SQL/GIS Support "spatialite"
+# =============================================================================
+FROM dockercentral.it.att.com:5100/com.att.dev.argos/debian-slim-python3:3.6.6
+
+# Install SQL/GIS "spatialite" for use with Python3.
+# =============================================================================
+WORKDIR /usr/src
+
+COPY ./spatialite_build.sh .
+RUN  ./spatialite_build.sh
+
+# Start an "application container"
+ENTRYPOINT ["su", "docker", "-c", "/usr/local/bin/python3"]
+

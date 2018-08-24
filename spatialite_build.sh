@@ -5,8 +5,13 @@
 
 SPATIALITE_VERSION="4.3.0a"
 
+# =============================================================================
+# Restore the package index.
+# =============================================================================
+apt-get update
+
 # spatialite: Install SQL/GIS libraries before building.
-apt-get install binutils libproj-dev gdal-bin libfreexl-dev
+apt-get -y install binutils libproj-dev libgeos-dev gdal-bin libxml2-dev libfreexl-dev
 
 # Download and build spatialite SQL/GIS *.so $SPATIALITE_VERSION
 # =============================================================================
@@ -24,3 +29,8 @@ make install
 
 rm /usr/src/libspatialite-${SPATIALITE_VERSION}.tar.gz
 rm -R /usr/src/libspatialite-${SPATIALITE_VERSION}
+
+# =============================================================================
+# Clean up the package index.
+# =============================================================================
+rm -r /var/lib/apt/lists/*
