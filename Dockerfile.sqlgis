@@ -1,6 +1,6 @@
 # Debian Slim - Python 3.6 with SQL/GIS Support "spatialite"
 # =============================================================================
-FROM dockercentral.it.att.com:5100/com.att.dev.argos/debian-slim-python3:3.6.6
+FROM dockercentral.it.example.com:5100/com.example.dev.argos/debian-slim-python3:3.6.6
 
 # Install SQL/GIS "spatialite" for use with Python3.
 # =============================================================================

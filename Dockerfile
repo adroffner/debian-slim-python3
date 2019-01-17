@@ -1,6 +1,6 @@
 # Debian Slim with Python 3.6 on Docker
 # =============================================================================
-# FROM dockercentral.it.att.com:5100/com.att.dev.argos/debian:stretch-slim
+# FROM dockercentral.it.example.com:5100/com.example.dev.argos/debian:stretch-slim
 FROM debian:stretch-slim
 
 # Set the Python 3.x.x version.
@@ -8,10 +8,10 @@ FROM debian:stretch-slim
 ENV PYTHON_VERSION="3.6.6"
 
 # HTTP Proxy Settings
-ENV http_proxy="http://one.proxy.att.com:8080"
-ENV https_proxy="http://one.proxy.att.com:8080"
-ENV HTTP_PROXY="http://one.proxy.att.com:8080"
-ENV HTTPS_PROXY="http://one.proxy.att.com:8080"
+ENV http_proxy="http://one.proxy.example.com:8080"
+ENV https_proxy="http://one.proxy.example.com:8080"
+ENV HTTP_PROXY="http://one.proxy.example.com:8080"
+ENV HTTPS_PROXY="http://one.proxy.example.com:8080"
 
 # =============================================================================
 # Debian: Ensure we have an up to date package index.
