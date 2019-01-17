@@ -8,8 +8,8 @@
 # OPTIONAL Install SQL/GIS "spatialite" when non-empty string
 GIS_SPATIALITE=""
 
-REGISTRY="dockercentral.it.att.com:5100"
-NAMESPACE="com.att.dev.argos"
+REGISTRY="dockercentral.it.example.com:5100"
+NAMESPACE="com.example.dev"
 IMAGE_NAME="debian-slim-python3"
 TAG="3.6.6"
 
@@ -24,7 +24,7 @@ fi
 
 FULL_IMAGE_NAME="${REGISTRY}/${NAMESPACE}/${IMAGE_NAME}:${TAG}"
 
-docker login -u m12292@argos.dev.att.com -p 3W2-CDP-naF-3aN -e m12292@att.com ${REGISTRY}
+docker login -u user@example.com -p password ${REGISTRY}
 
 docker build -t $FULL_IMAGE_NAME ./ \
     --build-arg http_proxy=$http_proxy \
